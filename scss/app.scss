@@ -1,5 +1,10 @@
-$rojo: orange;
+// $rojo: orange;
 
-body{
-    background-color: $rojo;
-}
+
+// body{
+//     background-color: $rojo;
+// }
+
+@import 'variables';
+@import 'mixins';
+@import 'custom';
