@@ -100,6 +100,35 @@ img {
   margin-left: 0.5rem;
 }
 
+.sidebar {
+  background-color: #6c757d;
+  flex: 0 0 20rem;
+  padding: 1rem;
+  justify-content: space-around;
+  color: #ffffff;
+  font-weight: bold;
+}
+.sidebar .usuario {
+  display: flex;
+  align-items: center;
+}
+.sidebar .usuario span {
+  font-weight: normal;
+  font-style: italic;
+  display: block;
+  margin-left: 2rem;
+}
+.sidebar .buscador {
+  margin-top: 1rem;
+}
+.sidebar .buscador input[type=text] {
+  width: 100%;
+  height: 2.5rem;
+  border: none;
+  padding-left: 1rem;
+}
+
 .contenedor-ppal {
   flex: 1;
+  display: flex;
 }
