@@ -6,9 +6,15 @@ const autoprefixer = require('gulp-autoprefixer');
 function css() {
     return gulp
         .src('scss/app.scss')
-        .pipe(autoprefixer())
-        .pipe(sass({ outputStyle: 'expanded' }))
-        .pipe(gulp.dest('css'))
+        .pipe(autoprefixer({
+            overrideBrowserlist : ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(sass({
+            outputStyle: 'expanded',
+        }))
+        .pipe(gulp.dest('css'));
+
 }
  function wathArchivos(){
     //  gulp.watch('scss/app.scss', css);

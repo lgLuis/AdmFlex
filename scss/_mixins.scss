@@ -1,3 +1,4 @@
+//Media queries.-
 @mixin telefono {
     @media only screen and (min-width: #{$telefono}) {
         @content;
