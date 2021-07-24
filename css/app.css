@@ -127,6 +127,42 @@ img {
   border: none;
   padding-left: 1rem;
 }
+.sidebar .menu-admin {
+  margin-top: 2rem;
+}
+
+.menu-admin .menu {
+  list-style: none;
+  padding: 0 0 0 1rem;
+}
+.menu-admin .menu > li {
+  padding: 0.5rem;
+}
+.menu-admin .menu > li:hover ul {
+  display: block;
+}
+.menu-admin .menu > li a {
+  color: #ffffff;
+  text-decoration: none;
+  pad: 0.5rem;
+  transition: padding-left 0.3s ease;
+}
+.menu-admin .menu > li a:hover {
+  background-color: #343a40;
+  padding-left: 2rem;
+}
+.menu-admin .menu > li ul {
+  display: none;
+  margin-top: 1rem;
+  list-style: none;
+  padding: 1rem;
+}
+.menu-admin .menu > li ul li {
+  margin-bottom: 1rem;
+}
+.menu-admin .menu > li ul li:last-of-type {
+  margin-bottom: 0;
+}
 
 .contenedor-ppal {
   flex: 1;
