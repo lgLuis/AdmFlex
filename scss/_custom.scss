@@ -25,7 +25,15 @@ img {
 .oculto {
   display: none;
 }
- //
+ 
+.no-menu.pagina{
+    .sidebar{
+        margin-left: -20rem;
+    }
+
+}
+
+
 .pagina {
    min-height: 100%;
    display: flex;
@@ -71,6 +79,14 @@ img {
         display: flex;
         align-items: center;
         padding: 1rem;
+
+        i{
+            color: $blanco;
+            font-size: 1.6rem;
+        }
+        .derecha{
+            display: none;
+        }
     }
     .menu-derecho{
         display: flex;
@@ -106,6 +122,7 @@ img {
     justify-content: space-around;
     color: $blanco;
     font-weight: bold;
+    transition: margin-left .53s ease;
     .usuario{
         display: flex;
         align-items: center;

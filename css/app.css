@@ -26,6 +26,10 @@ img {
   display: none;
 }
 
+.no-menu.pagina .sidebar {
+  margin-left: -20rem;
+}
+
 .pagina {
   min-height: 100%;
   display: flex;
@@ -76,6 +80,13 @@ img {
   align-items: center;
   padding: 1rem;
 }
+.barra .menu-izquierdo i {
+  color: #ffffff;
+  font-size: 1.6rem;
+}
+.barra .menu-izquierdo .derecha {
+  display: none;
+}
 .barra .menu-derecho {
   display: flex;
 }
@@ -107,6 +118,7 @@ img {
   justify-content: space-around;
   color: #ffffff;
   font-weight: bold;
+  transition: margin-left 0.53s ease;
 }
 .sidebar .usuario {
   display: flex;
