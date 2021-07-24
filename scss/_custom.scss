@@ -1,33 +1,104 @@
 html {
     box-sizing: border-box;
     height: 100%;
-  }
+}
   
-  *,
-  *:after,
-  *:before {
-    box-sizing: inherit;
-  }
+*,
+*:after,
+*:before {
+   box-sizing: inherit;
+}
   
-  body {
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100%;
-  }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+}
   
-  img {
-    max-width: 100%;
-  }
+img {
+   max-width: 100%;
+}
   
-  .centrado {
-    text-align: center;
-  }
+.centrado {
+  text-align: center;
+}
   
-  .oculto {
-    display: none;
-  }
-  //
-  .pagina {
-    min-height: 100%;
+.oculto {
+  display: none;
+}
+ //
+.pagina {
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+}
+.header{
     display: flex;
-    flex-direction: column;
-  }
+    .nombre-sitio{
+        flex:  0 0 5rem;
+        @include desktop{
+            flex: 0 0 20rem;
+        }
+        background-color: $grisFuerte;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        h1{
+            color: $blanco;
+            margin: 0;
+        }
+        .escritorio{
+            display: none;
+            @include desktop{
+                display: block;
+            }
+
+        }
+        .movil{
+            @include desktop{
+                display: none;
+            }
+        }
+    }
+}
+
+.barra{
+    display: flex;
+    justify-content: space-between;
+    background-color: $primario;
+    flex: 1;
+
+    .menu-izquierdo{
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
+    .menu-derecho{
+        display: flex;
+        .caja{
+            padding: 0 1.2rem;
+            display: flex;
+            align-items: center;
+
+            &:hover{
+                background-color: $grisMedio;
+            }
+            a{
+                color: $blanco;
+                text-decoration: none;
+                text-transform: uppercase;
+                
+                span{
+                    background-color: $grisSuave;
+                    color: $grisFuerte;
+                    border-radius: 10px;
+                    padding: .2rem;
+                    margin-left: .5rem;
+                } 
+            }
+        }
+    }
+}
+
+.contenedor-ppal{
+      flex: 1;
+}

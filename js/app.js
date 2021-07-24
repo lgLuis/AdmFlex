@@ -5,8 +5,8 @@ menuIzquierdo.addEventListener('click', (e) => {
 
     //Seleccionar el contenedor
     const contenedor = document.querySelector('.pagina'),
-    const flechaIzq = document.querySelector('.fa-arrow-left'),
-    const flechaDer = document.querySelector('.fa-arrow-right');
+            flechaIzq = document.querySelector('.fa-arrow-left'),
+            flechaDer = document.querySelector('.fa-arrow-right');
 
     if(claseMenu.contains('fa-arrow-left')){
         //Cerrar el menu lateral

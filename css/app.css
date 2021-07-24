@@ -31,3 +31,75 @@ img {
   display: flex;
   flex-direction: column;
 }
+
+.header {
+  display: flex;
+}
+.header .nombre-sitio {
+  flex: 0 0 5rem;
+  background-color: #343a40;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+}
+@media only screen and (min-width: 1200px) {
+  .header .nombre-sitio {
+    flex: 0 0 20rem;
+  }
+}
+.header .nombre-sitio h1 {
+  color: #ffffff;
+  margin: 0;
+}
+.header .nombre-sitio .escritorio {
+  display: none;
+}
+@media only screen and (min-width: 1200px) {
+  .header .nombre-sitio .escritorio {
+    display: block;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .header .nombre-sitio .movil {
+    display: none;
+  }
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d00000;
+  flex: 1;
+}
+.barra .menu-izquierdo {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.barra .menu-derecho {
+  display: flex;
+}
+.barra .menu-derecho .caja {
+  padding: 0 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.barra .menu-derecho .caja:hover {
+  background-color: #6c757d;
+}
+.barra .menu-derecho .caja a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.barra .menu-derecho .caja a span {
+  background-color: #ced4da;
+  color: #343a40;
+  border-radius: 10px;
+  padding: 0.2rem;
+  margin-left: 0.5rem;
+}
+
+.contenedor-ppal {
+  flex: 1;
+}
